@@ -133,7 +133,7 @@
 
   .seal{
     position:absolute;
-    right:calc(50% - clamp(112px,37vw,224px));
+    right:calc(50% - clamp(122px,39.5vw,238px));
     top:-6px;
     width:clamp(38px,11.5vw,58px);height:clamp(38px,11.5vw,58px);
     border-radius:9px;
@@ -184,7 +184,7 @@
     line-height:2;
     color:var(--ink-soft);
     letter-spacing:.1em;
-    max-width:19em;
+    max-width:20.5em;
     animation:rise .5s .24s both cubic-bezier(.2,.8,.2,1);
   }
   .wish b{color:#9c5f2c;font-weight:500;}
@@ -319,7 +319,7 @@
 
   <div class="title-wrap">
     <h1 class="title">教师节快乐</h1>
-    <div class="seal">敬<br />师</div>
+    <div class="seal">暖<br />心</div>
   </div>
 
   <div class="name-row">
@@ -328,7 +328,7 @@
     <span class="line"></span>
   </div>
 
-  <p class="wish">岁月不居，师恩长在。<br />愿您三尺讲台之外，也有<b>星辰大海与四季安宁</b>。</p>
+  <p class="wish">喝水、穿衣、午睡时轻轻拍背，<br />我们看不见的地方，<b>全是您的温柔</b>。</p>
 
   <!-- 音频播放器 -->
   <section class="player" id="player" aria-label="祝福音频播放器">
@@ -355,13 +355,13 @@
 
     <div class="meta">
       <div class="label" id="stateLabel">送给鲁老师的一段祝福</div>
-      <div class="hint" id="stateHint">轻触左侧按钮，听我说给您</div>
+      <div class="hint" id="stateHint">轻触左侧按钮，听宝宝说给您听</div>
       <div class="bars" id="bars"></div>
       <div class="time"><span id="cur">00:00</span> / <span id="dur">00:00</span></div>
     </div>
   </section>
 
-  <div class="sign">学 生 <span class="heart">♡</span> 吴 启 明 敬 上</div>
+  <div class="sign">吴 启 明 和 爸 爸 妈 妈 <span class="heart">♡</span> 敬 上</div>
 </main>
 
 <!-- 占位祝福音频：后续把真实录音命名为 blessing.mp3 覆盖同目录文件即可，无需改代码 -->
@@ -435,7 +435,7 @@
     player.classList.add('playing');
     btn.setAttribute('aria-label', '暂停祝福音频');
     label.textContent = '正在播放 · 送给鲁老师';
-    hint.textContent = '愿这段声音，替我说声谢谢';
+    hint.textContent = '谢谢您，让他喜欢上幼儿园';
   });
 
   function toIdle(text) {
