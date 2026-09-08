@@ -357,7 +357,7 @@
       <div class="label" id="stateLabel">送给李老师的一段祝福</div>
       <div class="hint" id="stateHint">轻触左侧按钮，听宝宝说给您听</div>
       <div class="bars" id="bars"></div>
-      <div class="time"><span id="cur">00:00</span> / <span id="dur">00:00</span></div>
+      <div class="time"><span id="cur">00:00</span> / <span id="dur">00:09</span></div>
     </div>
   </section>
 
@@ -423,7 +423,7 @@
   setProgress(0);
 
   audio.addEventListener('loadedmetadata', function () {
-    durEl.textContent = fmt(audio.duration);
+    if (isFinite(audio.duration) && audio.duration > 0) durEl.textContent = fmt(audio.duration);
   });
 
   audio.addEventListener('timeupdate', function () {
